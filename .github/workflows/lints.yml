@@ -9,7 +9,7 @@ name: Lints
 jobs:
   eslint:
     name: ESLint
-    runs-on: [self-hosted, light]
+    runs-on: ubuntu-latest
     steps:
       - name: Clone the repository
         uses: actions/checkout@v2
