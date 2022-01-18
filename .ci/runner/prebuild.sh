@@ -9,5 +9,5 @@ $RUNNER_DIR/../setup.sh
 
 echo "Saving workdir to cache..."
 rm -rf $WORKDIR/nearData $WORKDIR/near-cli $WORKDIR/aurora-cli $WORKDIR/contract.wasm || true
-cache-util msave relayer-ci-workdir-${COMMIT_HASH}:${WORKDIR} || true
+#cache-util msave relayer-ci-workdir-${COMMIT_HASH}:${WORKDIR} || true
 rm -rf $WORKDIR || true

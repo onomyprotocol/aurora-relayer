@@ -7,6 +7,6 @@ source $RUNNER_DIR/../controls/common.sh
 rm -rf $WORKDIR || true
 
 echo "Restoring workdir from cache..."
-cache-util restore relayer-ci-workdir-${COMMIT_HASH}:${WORKDIR} || true
+#cache-util restore relayer-ci-workdir-${COMMIT_HASH}:${WORKDIR} || true
 
 $RUNNER_DIR/../setup.sh --reset --start

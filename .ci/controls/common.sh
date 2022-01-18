@@ -4,6 +4,7 @@ CONTROLS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 WORKDIR=$CONTROLS_DIR/../workdir
 REPO_ROOT=$CONTROLS_DIR/../..
 
+export RUNNER_NAME=""
 
 if [[ ! -z $RUNNER_NAME ]]; then
     # All CI-runners are docker containers, and creating new
